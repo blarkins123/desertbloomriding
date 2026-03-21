@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business Name | Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <p class="tagline">Youth Western Riding</p>
+        <h1>Your Business Name</h1>
+      </div>
 
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="book.html" class="active">Book</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h2>Book Your Appointment</h2>
+        <p>Choose a day and time that works best.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column">
+        <div class="card">
+          <h3>Available Days &amp; Times</h3>
+
+          <div class="schedule-card">
+            <h4>Monday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+              <span>6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Wednesday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+              <span>6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Friday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Saturday</h4>
+            <div class="schedule-times">
+              <span>9:00 AM</span>
+              <span>10:00 AM</span>
+              <span>11:00 AM</span>
+            </div>
+          </div>
+
+          <p class="small-note">
+            Later, this page can be connected to Google Calendar so families can view live
+            availability and book directly.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Request a Lesson</h3>
+          <form>
+            <label for="parent-name">Parent or Guardian Name</label>
+            <input id="parent-name" type="text" placeholder="Enter name" />
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter email" />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" placeholder="Enter phone number" />
+
+            <label for="age">Rider Age</label>
+            <input id="age" type="text" placeholder="Enter rider age" />
+
+            <label for="day">Preferred Day</label>
+            <select id="day">
+              <option>Select a day</option>
+              <option>Monday</option>
+              <option>Wednesday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+            </select>
+
+            <label for="time">Preferred Time</label>
+            <select id="time">
+              <option>Select a time</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+            </select>
+
+            <label for="message">Tell Us About Your Rider</label>
+            <textarea id="message" rows="5" placeholder="Share experience level, questions, or anything you'd like us to know"></textarea>
+
+            <button type="button" class="btn btn-primary full-width">Submit Booking Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Your Business Name</p>
+      <p>Phone: (928) 230-7656</p>
+    </div>
+  </footer>
+</body>
+</html>
