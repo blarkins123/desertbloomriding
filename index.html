@@ -1,240 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Horse Riding Lessons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #d7e8eb;
-      color: #244d57;
-    }
-
-    header {
-      background: #d7e8eb;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 4px solid #e7d48a;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #244d57;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: #244d57;
-    }
-
-    .highlight {
-      background: #e7d48a;
-      padding: 8px 15px;
-      border-radius: 10px;
-      display: inline-block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 15px;
-      margin: 10px 0;
-    }
-
-    .button {
-      background: #244d57;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      border: none;
-      cursor: pointer;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-
-    .schedule {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .time {
-      background: #e7d48a;
-      padding: 5px 10px;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #244d57;
-      color: white;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business Name | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <p class="tagline">Youth Western Riding</p>
+        <h1>Your Business Name</h1>
+      </div>
 
-<header>
-  <h1>Your Business Name</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#book">Book</a>
-    <a href="#newsletter">Newsletter</a>
-  </nav>
-</header>
-
-<!-- HOME -->
-<section id="home">
-  <div class="highlight">Build Confidence & Connection</div>
-  <h2>Horseback Riding Lessons</h2>
-
-  <p>
-    We offer western riding lessons for youth 18 and under in a safe, supportive,
-    and encouraging environment. Our goal is to help young riders build confidence,
-    learn responsibility, and develop a strong connection with horses.
-  </p>
-
-  <p>
-    Whether your child is brand new or gaining experience, lessons are tailored to
-    meet them where they are while helping them grow at their own pace.
-  </p>
-
-  <h3>What We Offer</h3>
-
-  <div class="card">Beginner-friendly riding lessons</div>
-  <div class="card">Confidence-building instruction</div>
-  <div class="card">Horsemanship fundamentals</div>
-  <div class="card">Safe and reliable horses</div>
-  <div class="card">Outdoor riding arena</div>
-
-  <a href="#book" class="button">Book a Lesson</a>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Us</h2>
-
-  <p>
-    Our program is built on a love for horses and a passion for helping young riders
-    grow. We believe horseback riding is more than just a skill — it teaches patience,
-    responsibility, and confidence.
-  </p>
-
-  <p>
-    Our instructors are dedicated to creating a welcoming and encouraging environment
-    where every rider feels supported. As we continue to grow, this section will include
-    more details about our team, experience, and story.
-  </p>
-
-  <div class="card">
-    <strong>Coming Soon:</strong> Owner bios, instructor backgrounds, and photos
-  </div>
-</section>
-
-<!-- BOOK -->
-<section id="book">
-  <h2>Book Your Appointment</h2>
-
-  <p>Select a day and time that works best:</p>
-
-  <div class="card">
-    <strong>Monday</strong>
-    <div class="schedule">
-      <div class="time">4:00 PM</div>
-      <div class="time">5:00 PM</div>
-      <div class="time">6:00 PM</div>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="book.html">Book</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="card">
-    <strong>Wednesday</strong>
-    <div class="schedule">
-      <div class="time">4:00 PM</div>
-      <div class="time">5:00 PM</div>
-      <div class="time">6:00 PM</div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Build Confidence &amp; Connection</span>
+          <h2>Horseback riding lessons for youth in a warm, supportive environment.</h2>
+          <p>
+            We offer western riding lessons designed to help young riders grow in confidence,
+            responsibility, patience, and horsemanship. Our goal is to create a positive,
+            encouraging experience where every rider can learn at a pace that feels comfortable.
+          </p>
+          <p>
+            Whether your child is brand new to horses or continuing to build their skills,
+            our lessons focus on safety, trust, and steady progress while making the experience
+            fun and meaningful.
+          </p>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="book.html">Book a Lesson</a>
+            <a class="btn btn-secondary" href="about.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="card feature-box">
+          <h3>What We Offer</h3>
+          <ul class="feature-list">
+            <li>Beginner-friendly western riding lessons</li>
+            <li>Youth lessons for riders 18 &amp; under</li>
+            <li>Confidence-building instruction</li>
+            <li>Horsemanship and horse safety basics</li>
+            <li>Supportive one-on-one guidance</li>
+            <li>Outdoor riding experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container three-column">
+        <div class="card">
+          <h3>Safe and Supportive</h3>
+          <p>
+            Lessons are built around making riders feel comfortable, encouraged, and supported
+            from the very beginning.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Western Riding Focus</h3>
+          <p>
+            We focus on foundational riding skills, horse awareness, and the connection between
+            rider and horse.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>More Than Riding</h3>
+          <p>
+            Riders also build confidence, patience, and responsibility—skills that go far beyond
+            the arena.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Your Business Name</p>
+      <p>Phone: (928) 230-7656</p>
     </div>
-  </div>
-
-  <div class="card">
-    <strong>Saturday</strong>
-    <div class="schedule">
-      <div class="time">9:00 AM</div>
-      <div class="time">10:00 AM</div>
-      <div class="time">11:00 AM</div>
-    </div>
-  </div>
-
-  <h3>Request a Lesson</h3>
-
-  <input placeholder="Parent Name">
-  <input placeholder="Email">
-  <input placeholder="Phone">
-  <input placeholder="Rider Age">
-
-  <select>
-    <option>Select Day</option>
-    <option>Monday</option>
-    <option>Wednesday</option>
-    <option>Saturday</option>
-  </select>
-
-  <select>
-    <option>Select Time</option>
-    <option>9:00 AM</option>
-    <option>10:00 AM</option>
-    <option>11:00 AM</option>
-    <option>4:00 PM</option>
-    <option>5:00 PM</option>
-    <option>6:00 PM</option>
-  </select>
-
-  <textarea placeholder="Tell us about your rider"></textarea>
-
-  <button class="button">Submit Request</button>
-
-  <p style="margin-top:15px;">
-    (Later we will connect this to Google Calendar so clients can book directly.)
-  </p>
-</section>
-
-<!-- NEWSLETTER -->
-<section id="newsletter">
-  <h2>Join Our Newsletter</h2>
-
-  <p>Get updates on lesson openings, events, and more.</p>
-
-  <input placeholder="Enter your email">
-  <button class="button">Sign Up</button>
-</section>
-
-<footer>
-  <p>Phone: (928) 230-7656</p>
-  <p>Website coming soon</p>
-</footer>
-
+  </footer>
 </body>
 </html>
