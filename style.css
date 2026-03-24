@@ -1,481 +1,40 @@
 :root {
-  --sand: #f3e7d3;
-  --terracotta: #b86f52;
-  --golden-wheat: #d6b35a;
-  --olive-sage: #8a9a74;
-  --deep-brown: #5a3e2b;
-  --soft-cream: #fcf7ef;
-  --warm-white: #fffdf9;
-  --dusty-rose: #d8a58f;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--sand);
-  color: var(--deep-brown);
-  line-height: 1.6;
-}
-
-.container {
-  width: min(1100px, 92%);
-  margin: 0 auto;
-}
-
-.site-header {
-  background: var(--deep-brown);
-  color: var(--soft-cream);
-  padding: 18px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.nav-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.brand h1 {
-  margin: 0;
-  font-size: 1.6rem;
-}
-
-.tagline {
-  margin: 0 0 4px;
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--golden-wheat);
-}
-
-.site-nav {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.site-nav a {
-  color: var(--soft-cream);
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 999px;
-  transition: 0.2s ease;
-}
-
-.site-nav a:hover,
-.site-nav a.active {
-  background: var(--golden-wheat);
-  color: var(--deep-brown);
-}
-
-.hero,
-.page-banner {
-  padding: 60px 0 30px;
-}
-
-.hero-grid,
-.two-column,
-.three-column {
-  display: grid;
-  gap: 24px;
-}
-
-.hero-grid,
-.two-column {
-  grid-template-columns: 1.2fr 1fr;
-}
-
-.three-column {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.hero-text h2,
-.page-banner h2 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.15;
-  margin: 16px 0;
-}
-
-.pill {
-  display: inline-block;
-  background: var(--golden-wheat);
-  color: var(--deep-brown);
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 0.95rem;
-}
-
-.section {
-  padding: 26px 0 54px;
-}
-
-.alt-section {
-  background: rgba(252, 247, 239, 0.55);
-}
-
-.card {
-  background: var(--soft-cream);
-  border: 2px solid rgba(138, 154, 116, 0.2);
-  border-radius: 24px;
-  padding: 24px;
-  box-shadow: 0 10px 24px rgba(90, 62, 43, 0.08);
-}
-
-.highlight-card {
-  border-top: 6px solid var(--terracotta);
-}
-
-.visual-placeholder {
-  overflow: hidden;
-}
-
-.placeholder-art {
-  position: relative;
-  height: 220px;
-  border-radius: 20px;
-  background: linear-gradient(to top, #d8c2a2 0%, #f6e9d8 45%, #fdf8ef 100%);
-  margin-bottom: 18px;
-  overflow: hidden;
-}
-
-.placeholder-art.tall {
-  height: 260px;
-}
-
-.sun {
+.hero-bloom {
   position: absolute;
-  top: 24px;
-  right: 28px;
-  width: 70px;
-  height: 70px;
-  background: var(--golden-wheat);
   border-radius: 50%;
-  opacity: 0.9;
+  opacity: 0.16;
+  pointer-events: none;
 }
 
-.small-sun {
-  width: 54px;
-  height: 54px;
+.bloom-one {
+  width: 180px;
+  height: 180px;
+  background: var(--pink);
+  top: -40px;
+  right: -40px;
 }
 
-.cactus {
-  position: absolute;
-  bottom: 0;
-  background: var(--olive-sage);
-  border-radius: 20px 20px 0 0;
-}
-
-.cactus::before,
-.cactus::after {
-  content: "";
-  position: absolute;
-  background: var(--olive-sage);
-  border-radius: 20px 20px 0 0;
-}
-
-.cactus-one {
-  left: 50px;
-  width: 34px;
-  height: 120px;
-}
-
-.cactus-one::before {
-  left: -20px;
-  bottom: 25px;
-  width: 18px;
-  height: 52px;
-}
-
-.cactus-one::after {
-  right: -20px;
-  bottom: 35px;
-  width: 18px;
-  height: 45px;
-}
-
-.cactus-two {
-  right: 70px;
-  width: 28px;
-  height: 92px;
-}
-
-.cactus-two::before {
-  left: -16px;
-  bottom: 18px;
-  width: 16px;
-  height: 38px;
-}
-
-.cactus-two::after {
-  right: -16px;
-  bottom: 28px;
-  width: 16px;
-  height: 34px;
-}
-
-.cactus-three {
-  left: 80px;
-  width: 36px;
-  height: 130px;
-}
-
-.cactus-three::before {
-  left: -22px;
-  bottom: 28px;
-  width: 18px;
-  height: 58px;
-}
-
-.cactus-three::after {
-  right: -22px;
-  bottom: 38px;
-  width: 18px;
-  height: 52px;
-}
-
-.flower {
-  position: absolute;
-  bottom: 12px;
-  width: 18px;
-  height: 18px;
-  background: var(--dusty-rose);
-  border-radius: 50%;
-  box-shadow:
-    -12px 0 0 var(--dusty-rose),
-    12px 0 0 var(--dusty-rose),
-    0 -12px 0 var(--dusty-rose),
-    0 12px 0 var(--dusty-rose);
-}
-
-.flower::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  background: var(--golden-wheat);
-  border-radius: 50%;
-}
-
-.flower-one {
-  left: 145px;
-}
-
-.flower-two {
-  right: 145px;
-}
-
-.flower-three {
-  left: 170px;
-}
-
-.feature-list {
-  margin: 16px 0 0;
-  padding-left: 20px;
-}
-
-.feature-list li {
-  margin-bottom: 10px;
-}
-
-.button-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.center-buttons {
-  justify-content: center;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.btn-primary {
-  background: var(--terracotta);
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #a75f43;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--deep-brown);
-  border: 2px solid var(--olive-sage);
-}
-
-.btn-secondary:hover {
-  background: var(--olive-sage);
-  color: #fff;
-}
-
-.cta-section {
-  padding-top: 10px;
-}
-
-.cta-card {
-  text-align: center;
-}
-
-.contact-big {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 10px 0;
-  color: var(--terracotta);
-}
-
-.price-tag {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: var(--terracotta);
-  margin: 10px 0;
-}
-
-.price-box {
-  background: var(--warm-white);
-  border-left: 6px solid var(--golden-wheat);
-  border-radius: 18px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
-.schedule-card {
-  background: var(--warm-white);
-  border-left: 6px solid var(--olive-sage);
-  border-radius: 18px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
-.schedule-card h4,
-.price-box h4 {
-  margin: 0 0 10px;
-}
-
-.schedule-times {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.schedule-times span {
-  background: var(--golden-wheat);
-  color: var(--deep-brown);
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 0.95rem;
-}
-
-label {
-  display: block;
-  margin: 14px 0 6px;
-  font-weight: bold;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #d8cbb8;
-  border-radius: 14px;
-  font-size: 1rem;
-  background: #fff;
-  color: var(--deep-brown);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 2px solid rgba(184, 111, 82, 0.2);
-  border-color: var(--terracotta);
-}
-
-.full-width {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.inset-card {
-  margin-top: 22px;
-  background: rgba(214, 179, 90, 0.12);
-  border: 1px solid rgba(214, 179, 90, 0.35);
-  box-shadow: none;
-}
-
-.space-top {
-  margin-top: 28px;
-}
-
-.small-note {
-  font-size: 0.95rem;
-  color: #755947;
-}
-
-.testimonial-card {
-  text-align: center;
-}
-
-.testimonial-placeholder {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: var(--deep-brown);
-  margin: 18px 0 8px;
-}
-
-.desert-accent {
-  position: relative;
-}
-
-.desert-accent::before {
-  content: "🌵";
-  position: absolute;
-  left: 24px;
-  top: 22px;
-  font-size: 1.8rem;
-  opacity: 0.55;
-}
-
-.desert-accent::after {
-  content: "🌸";
-  position: absolute;
-  right: 26px;
-  bottom: 18px;
-  font-size: 1.6rem;
-  opacity: 0.6;
+.bloom-two {
+  width: 140px;
+  height: 140px;
+  background: var(--blue);
+  bottom: 10px;
+  left: -35px;
 }
 
 .site-footer {
-  background: var(--deep-brown);
-  color: var(--soft-cream);
-  text-align: center;
-  padding: 24px 0;
-  margin-top: 20px;
+  background: linear-gradient(90deg, var(--brown), #744f37);
+  color: white;
+  padding: 26px 0;
 }
 
+.site-footer h4,
 .site-footer p {
   margin: 6px 0;
 }
@@ -483,8 +42,11 @@ textarea:focus {
 @media (max-width: 900px) {
   .hero-grid,
   .two-column,
-  .three-column {
+  .three-column,
+  .footer-grid,
+  .cta-box {
     grid-template-columns: 1fr;
+    display: grid;
   }
 
   .nav-wrap {
@@ -500,8 +62,8 @@ textarea:focus {
     flex: 1 1 140px;
   }
 
-  .desert-accent::before,
-  .desert-accent::after {
-    display: none;
+  .tall-image,
+  .medium-image {
+    min-height: 280px;
   }
 }
