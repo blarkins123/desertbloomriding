@@ -1,4 +1,139 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desert Bloom Riding | Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <p class="tagline">Youth Western Riding</p>
+        <h1>Desert Bloom Riding</h1>
+      </div>
+
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="book.html" class="active">Book</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner bright-banner">
+      <div class="container">
+        <span class="pill">Book Your Appointment</span>
+        <h2>Choose a lesson that works best for your family.</h2>
+        <p>
+          This page is ready for a future Google Calendar connection, but already gives families clear scheduling and pricing options.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container two-column">
+        <div class="card">
+          <span class="mini-tag">Schedule</span>
+          <h3>Available Days &amp; Times</h3>
+
+          <div class="schedule-card">
+            <h4>Monday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+              <span>6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Wednesday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+              <span>6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Friday</h4>
+            <div class="schedule-times">
+              <span>4:00 PM</span>
+              <span>5:00 PM</span>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <h4>Saturday</h4>
+            <div class="schedule-times">
+              <span>9:00 AM</span>
+              <span>10:00 AM</span>
+              <span>11:00 AM</span>
+            </div>
+          </div>
+
+          <p class="small-note">
+            Placeholder schedule. Later this can connect to Google Calendar for live booking.
+          </p>
+        </div>
+
+        <div class="card pricing-panel">
+          <span class="mini-tag">Pricing</span>
+          <h3>Lesson Options</h3>
+
+          <div class="price-box border-pink">
+            <h4>🌟 First Ride Experience</h4>
+            <p class="price-tag">$40</p>
+            <p>Perfect for beginners who want a gentle and fun first experience.</p>
+          </div>
+
+          <div class="price-box border-green">
+            <h4>🐎 Private Lesson</h4>
+            <p class="price-tag">$50</p>
+            <p>One-on-one instruction focused on the rider’s pace and progress.</p>
+          </div>
+
+          <div class="price-box border-blue">
+            <h4>👥 Small Group Lesson</h4>
+            <p class="price-tag">$40 each</p>
+            <p>A great option for friends or siblings learning together.</p>
+          </div>
+
+          <div class="price-box border-gold">
+            <h4>📦 4 Lesson Package</h4>
+            <p class="price-tag">$180</p>
+            <p>Great for families wanting consistency and steady rider growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue">
+      <div class="container two-column">
+        <div class="card">
+          <span class="mini-tag">Booking request</span>
+          <h3>Request a Lesson</h3>
+
+          <form>
+            <label for="parent-name">Parent or Guardian Name</label>
+            <input id="parent-name" type="text" placeholder="Enter name" />
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter email" />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" placeholder="Enter phone number" />
+
+            <label for="age">Rider Age</label>
+            <input id="age" type="text" placeholder="Enter rider age" />
+
+            <label for="lesson-type">Lesson Type</label>
+            <select id="lesson-type">
+              <option>Select lesson type</option>
+              <option>First Ride Experience</option>
               <option>Private Lesson</option>
               <option>Small Group Lesson</option>
               <option>4 Lesson Package</option>
@@ -25,15 +160,38 @@
             </select>
 
             <label for="message">Tell Us About Your Rider</label>
-            <textarea id="message" rows="5" placeholder="Share any questions or experience level"></textarea>
+            <textarea id="message" rows="5" placeholder="Share experience level, questions, or anything helpful"></textarea>
 
             <button type="button" class="btn btn-primary full-width">Submit Booking Request</button>
           </form>
         </div>
 
         <div class="image-card tall-image">
-          <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" alt="Booking photo placeholder" />
-          <div class="image-badge">Booking Page Photo Placeholder</div>
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+            alt="Placeholder booking page image"
+          />
+          <div class="image-badge">Booking Page Placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-green">
+      <div class="container two-column">
+        <div class="card">
+          <h3>💬 Prefer to Book by Text?</h3>
+          <p class="contact-big">(928) 230-7656</p>
+          <p>
+            Families are welcome to text questions or request times if that feels easier than filling out the form.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Future Upgrade</h3>
+          <p>
+            This page is already set up to later connect with Google Calendar, automatic reminder emails,
+            and a branded business email system.
+          </p>
         </div>
       </div>
     </section>
